@@ -8,7 +8,7 @@ import Register from "./components/Register";
 
 const App = () => {
   return (
-    <div>
+    <div className="  bg-[#F8EBE6]">
       <Header />
 
       <Routes>
