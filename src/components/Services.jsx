@@ -1,11 +1,4 @@
-import {
-  CodeXml,
-  CodeXmlIcon,
-  Headset,
-  Laptop,
-  Palette,
-  Smartphone,
-} from "lucide-react";
+import { Headset, Laptop, Palette, Smartphone } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -42,7 +35,7 @@ const Services = () => {
 
           return (
             <div
-              className=" bg-white rounded-3xl p-5 flex flex-col items-center flex-1 min-w-0 gap-5 mx-auto shadow-md border border-purple-50 hover:-translate-y-2 transition-transform duration-300 cursor-grab "
+              className=" bg-white rounded-3xl p-5 flex flex-col items-center flex-1 min-w-0 gap-5 mx-auto shadow-md border border-purple-50 hover:-translate-y-2 transition-transform duration-300 "
               key={eachElement.id}
             >
               <div className="w-[55px] bg-purple-200 flex items-center justify-center rounded-2xl h-10 w-20">
@@ -57,6 +50,7 @@ const Services = () => {
               <span className="text-sm text-gray-700 leading-6 max-w-[190px] text-center font-medium">
                 {eachElement.descr}
               </span>
+              <span className="border border-purple-800 w-[150px] "></span>
             </div>
           );
         })}

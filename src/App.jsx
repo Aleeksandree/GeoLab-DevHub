@@ -5,6 +5,7 @@ import Info from "./components/Info";
 import Course from "./components/Course";
 import Projects from "./components/Projects";
 import Register from "./components/Register";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/register" element={<Register />} />
       </Routes>
+      <Footer />
     </div>
   );
 };

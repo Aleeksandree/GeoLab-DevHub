@@ -50,16 +50,14 @@ const Home = () => {
       </div>
       <div className="flex flex-col gap-[50px]">
         <div className="max-w-[1440px] flex flex-col items-center justify-center  ">
-          <h2 className="bg-purple-300 w-[200px] text-center rounded-2xl font-bold text-purple-800 p-1 mb-2">
-            ჩვენი სერვისები
+          <h2 className="bg-purple-300 w-[230px] text-center rounded-2xl font-bold text-purple-800 p-1 mb-2">
+            ჩვენი მიმართულებები
           </h2>
           <p className="text-black font-extrabold text-2xl">
             აღმოაჩინე ჩვენი მიმართულებები
           </p>
         </div>
-        <div>
-          <Services />
-        </div>
+        <Services />
       </div>
     </div>
   );

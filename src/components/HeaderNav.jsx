@@ -27,7 +27,7 @@ const HeaderNav = () => {
   return (
     <div className="flex gap-5">
       {navBar.map((eachNav) => (
-        <ul className="text-purple-800 font-bold" key={eachNav.id}>
+        <ul className=" text-fuchsia-300 font-bold" key={eachNav.id}>
           <NavLink to={eachNav.path}>
             <li>{eachNav.nameNav}</li>
           </NavLink>
