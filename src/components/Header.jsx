@@ -14,7 +14,7 @@ const Header = () => {
         <HeaderNav />
 
         <Link to={"/register"}>
-          <button className="w-[120px] h-[50px] rounded-2xl bg-purple-800 text-white font-medium">
+          <button className="w-[120px] h-[50px] rounded-2xl bg-purple-800 text-white font-medium cursor-pointer">
             <Link to={"/register"}>რეგისტრაცია </Link>
           </button>
         </Link>
