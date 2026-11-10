@@ -93,10 +93,31 @@ const Footer = () => {
             <h2 className="text-white font-bold text-[18px] mt-1">
               გამოგვყევი
             </h2>
-            <div className="flex gap-2 mt-4 text-purple-300">
-              <FaFacebookF size={20} />
-              <BsInstagram size={20} />
-              <BsYoutube size={20} />
+            <div className="flex gap-4 mt-4 text-purple-300">
+              <Link
+                to={
+                  "https://www.facebook.com/share/1F2ZahFkwf/?mibextid=wwXIfr"
+                }
+                className="bg-purple-700 p-3 rounded-4xl"
+              >
+                <FaFacebookF size={20} />
+              </Link>
+
+              <Link
+                className="bg-purple-700 p-3 rounded-4xl"
+                to={
+                  "https://www.instagram.com/geolabcommunity?xtok=MWx0empkcGtmeTdmZg=="
+                }
+              >
+                <BsInstagram size={20} />
+              </Link>
+
+              <Link
+                to={"https://www.youtube.com/@lsGeolab"}
+                className="bg-purple-700 p-3 rounded-4xl"
+              >
+                <BsYoutube size={20} />
+              </Link>
             </div>
           </div>
         </div>
