@@ -3,8 +3,11 @@ import GeoLab from "../assets/geolab.png";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { FaFacebook, FaFacebookF } from "react-icons/fa";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
+import { useContext } from "react";
+import { ModeContext } from "../Context/Context";
 
 const Footer = () => {
+  const { light, setLight, swichMode } = useContext(ModeContext);
   const navBar = [
     {
       name: "მთავარი",
@@ -13,17 +16,17 @@ const Footer = () => {
     },
     {
       name: "კურსები",
-      path: "/Cours",
+      path: "/cours",
       id: 2,
     },
     {
       name: "პროექტები",
-      path: "/Projects",
+      path: "/projects",
       id: 3,
     },
     {
       name: "ინფორმაცია",
-      path: "/Info",
+      path: "/infos",
       id: 4,
     },
   ];
@@ -33,7 +36,7 @@ const Footer = () => {
     { id: 3, text: "თბილისი, საქართველო", icon: MapPin },
   ];
   return (
-    <div className="w-full bg-purple-900  mt-17  ">
+    <div className={`w-full mt-17 ${light ? "bg-mist-900" : "bg-blue-100 "}`}>
       <div className="max-w-[1440px] mx-auto flex gap-5 px-2 pt-5 ">
         <div className=" flex-1  flex flex-col items-center gap-2.5">
           <div className="flex items-center  gap-2  ">

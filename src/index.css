@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
 .active {
-  color: black;
+  color: purple;
   border-bottom: 2px solid red;
 }

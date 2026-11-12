@@ -41,7 +41,7 @@ const Services = () => {
               <div className="w-[55px] bg-purple-200 flex items-center justify-center rounded-2xl h-10 w-20">
                 <Icon
                   size={30}
-                  className="   pt-1   rounded-4xl text-purple-700"
+                  className="   pt-1   rounded-4xl  text-purple-700"
                 />
               </div>
               <h3 className="font-bold text-[20px] text-black">

@@ -35,7 +35,7 @@ const HeaderNav = ({ light }) => {
             to={eachNav.path}
             className={({ isActive }) =>
               isActive
-                ? "border-b-2 border-black text-black pb-1 rounded-[5px]"
+                ? `border-b-2 pb-1 rounded-[5px] ${light ? "border-white" : "border-black"}`
                 : ""
             }
           >

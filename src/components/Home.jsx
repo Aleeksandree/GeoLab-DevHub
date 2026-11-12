@@ -13,13 +13,13 @@ const Home = () => {
               src="https://cdn.iconscout.com/icon/premium/png-512-thumb/nft-rocket-icon-svg-download-png-5498493.png?f=webp&w=512"
               alt="rocket-icon"
             />
-            <p className="font-medium text-purple-800 text-xs ">
+            <p className="font-medium text-purple-600 text-xs ">
               ისწავლე,შექმენი,განვითარდი.
             </p>
           </span>
           <h1 className="flex  flex-col items-start font-bold text-3xl gap-1 ">
             შექმენი შენი მომავალი
-            <span className="text-purple-700 whitespace-nowrap">
+            <span className="text-purple-600 whitespace-nowrap">
               თექნოლოგიებთან ერთად
             </span>
           </h1>
@@ -29,12 +29,12 @@ const Home = () => {
           </span>
           <div className="flex justify-start mt-2 gap-2.5 items-center">
             <Link to={"/cours"}>
-              <button className=" py-2 px-4 bg-purple-700 rounded-[15px] text-white py-2 cursor-pointer">
+              <button className=" py-2 px-4 bg-purple-600 rounded-[15px] text-white py-2 cursor-pointer">
                 აღმოაჩინე კურსები
               </button>
             </Link>
             <Link to={"/infos"}>
-              <button className="border-2 rounded-[7px] border-purple-700 py-2 text-purple-600 font-medium px-4 text-sm cursor-pointer">
+              <button className="border-2 rounded-[7px] border-purple-600 py-2 text-purple-600 font-medium px-4 text-sm cursor-pointer">
                 გაიგე მეტი
               </button>
             </Link>

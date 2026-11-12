@@ -10,12 +10,12 @@ import { useState } from "react";
 
 const App = () => {
   return (
-    <div className="  bg-[#F8EBE6]">
+    <div className=" bg-blue-100 ">
       <Header />
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/info" element={<Info />} />
+        <Route path="/infos" element={<Info />} />
         <Route path="/cours" element={<Course />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/register" element={<Register />} />
