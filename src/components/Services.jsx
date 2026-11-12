@@ -50,7 +50,7 @@ const Services = () => {
               <span className="text-sm text-gray-700 leading-6 max-w-[190px] text-center font-medium">
                 {eachElement.descr}
               </span>
-              <span className="border border-purple-800 w-[150px] "></span>
+              <span className="border border-purple-800 w-[150px]  "></span>
             </div>
           );
         })}

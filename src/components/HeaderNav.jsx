@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-const HeaderNav = () => {
+const HeaderNav = ({ light }) => {
   const navBar = [
     {
       nameNav: "მთავარი",
@@ -27,9 +27,19 @@ const HeaderNav = () => {
   return (
     <div className="flex gap-5">
       {navBar.map((eachNav) => (
-        <ul className=" text-fuchsia-300 font-bold" key={eachNav.id}>
-          <NavLink to={eachNav.path}>
-            <li>{eachNav.nameNav}</li>
+        <ul
+          className={`${light ? "text-white font-bold" : "text-black font-bold"}`}
+          key={eachNav.id}
+        >
+          <NavLink
+            to={eachNav.path}
+            className={({ isActive }) =>
+              isActive
+                ? "border-b-2 border-black text-black pb-1 rounded-[5px]"
+                : ""
+            }
+          >
+            {eachNav.nameNav}
           </NavLink>
         </ul>
       ))}

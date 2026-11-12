@@ -6,6 +6,7 @@ import Course from "./components/Course";
 import Projects from "./components/Projects";
 import Register from "./components/Register";
 import Footer from "./components/Footer";
+import { useState } from "react";
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/infos" element={<Info />} />
+        <Route path="/info" element={<Info />} />
         <Route path="/cours" element={<Course />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/register" element={<Register />} />

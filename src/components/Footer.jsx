@@ -13,7 +13,7 @@ const Footer = () => {
     },
     {
       name: "კურსები",
-      path: "/Course",
+      path: "/Cours",
       id: 2,
     },
     {
@@ -33,30 +33,29 @@ const Footer = () => {
     { id: 3, text: "თბილისი, საქართველო", icon: MapPin },
   ];
   return (
-    <div className="w-full bg-purple-900 rounded-4xl mt-17 ">
-      <div className="max-w-[1440px] mx-auto flex gap-5 px-5 py-10">
-        <div className=" flex-1 flex flex-col">
-          <div className="flex items-center   ">
+    <div className="w-full bg-purple-900  mt-17  ">
+      <div className="max-w-[1440px] mx-auto flex gap-5 px-2 pt-5 ">
+        <div className=" flex-1  flex flex-col items-center gap-2.5">
+          <div className="flex items-center  gap-2  ">
             <img
               className="w-[35px] rounded-2xl "
               src={GeoLab}
               alt="Logo-icon"
             />
-            <h2 className="font-bold text-white text-2xl">GeoLab</h2>
+            <h2 className="font-bold text-fuchsia-300 text-2xl">GeoLab</h2>
           </div>
-          <span className="text-amber-100 font-extrabold mt-2">
+          <span className="text-white font-semibold  text-center flex flex-col gap-1 ">
             ისწავლე, შექმენი და განვითარდი
+            <span>შენი იდეები იწყება აქ!</span>
           </span>
         </div>
         <span className="border border-gray-400"></span>
-        <div className=" flex-1 flex flex-col items-center justify-center">
-          <h2 className="text-white font-bold text-[18px] mt-1">
-            სწრაფი ბმულები
-          </h2>
+        <div className=" flex-1 flex flex-col  items-center gap-0.5  ">
+          <h2 className="text-black font-bold text-[18px] ">სწრაფი ბმულები</h2>
           {navBar.map((eachElement) => (
-            <div key={eachElement.id}>
+            <div className="mt-[2px]" key={eachElement.id}>
               <Link
-                className="text-amber-100 font-extrabold"
+                className="text-white font-extrabold  "
                 to={eachElement.path}
               >
                 {eachElement.name}
@@ -65,22 +64,19 @@ const Footer = () => {
           ))}
         </div>
         <span className="border border-gray-400"></span>
-        <div className=" flex-1  flex flex-col justify-center  pl-4">
-          <div className=" flex flex-col items-center justify-center">
-            <h2 className="text-white font-bold text-[18px] mt-1">კონტაკტი</h2>
+        <div className=" flex-1  flex flex-col items-center   ">
+          <div className=" flex flex-col items-center justify-center gap-1">
+            <h2 className="text-black font-bold text-[18px] ">კონტაკტი</h2>
             {contacts.map((eachInfo) => {
               const Icon = eachInfo.icon;
               return (
                 <div
-                  className="flex-1 flex flex-col justify-center gap-3"
+                  className="flex-1 flex flex-col justify-center gap-3 "
                   key={eachInfo.id}
                 >
                   <div className="flex items-center gap-3" key={eachInfo.id}>
-                    <Icon
-                      size={20}
-                      className="text-purple-300 text-purple-300 shrink-0 w-5"
-                    />
-                    <h2 className="text-amber-100 ">{eachInfo.text}</h2>
+                    <Icon size={20} className=" text-black shrink-0 w-5" />
+                    <h2 className="text-white ">{eachInfo.text}</h2>
                   </div>
                 </div>
               );
@@ -88,9 +84,9 @@ const Footer = () => {
           </div>
         </div>
         <span className="border border-gray-400"></span>
-        <div className=" flex-1 ">
+        <div className=" flex-1  ">
           <div className="flex  justify-center pt-2.5 flex-col items-center ">
-            <h2 className="text-white font-bold text-[18px] mt-1">
+            <h2 className="text-black font-bold text-[18px] mt-1">
               გამოგვყევი
             </h2>
             <div className="flex gap-4 mt-4 text-purple-300">
