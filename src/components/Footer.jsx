@@ -35,6 +35,7 @@ const Footer = () => {
     { id: 2, text: "+995 555 12 34 56", icon: Phone },
     { id: 3, text: "თბილისი, საქართველო", icon: MapPin },
   ];
+
   return (
     <div className={`w-full mt-17 ${light ? "bg-mist-900" : "bg-blue-100 "}`}>
       <div className="max-w-[1440px] mx-auto flex gap-5 px-2 pt-5 ">
@@ -54,7 +55,11 @@ const Footer = () => {
         </div>
         <span className="border border-gray-400"></span>
         <div className=" flex-1 flex flex-col  items-center gap-0.5  ">
-          <h2 className="text-black font-bold text-[18px] ">სწრაფი ბმულები</h2>
+          <h2
+            className={`"text-black font-bold text-[18px] ${light ? "text-white" : "text-black "} "`}
+          >
+            სწრაფი ბმულები
+          </h2>
           {navBar.map((eachElement) => (
             <div className="mt-[2px]" key={eachElement.id}>
               <Link
@@ -69,7 +74,11 @@ const Footer = () => {
         <span className="border border-gray-400"></span>
         <div className=" flex-1  flex flex-col items-center   ">
           <div className=" flex flex-col items-center justify-center gap-1">
-            <h2 className="text-black font-bold text-[18px] ">კონტაკტი</h2>
+            <h2
+              className={`"text-black font-bold text-[18px] ${light ? "text-white" : "text-black "} "`}
+            >
+              კონტაკტი
+            </h2>
             {contacts.map((eachInfo) => {
               const Icon = eachInfo.icon;
               return (

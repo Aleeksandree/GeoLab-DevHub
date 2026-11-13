@@ -10,7 +10,7 @@ import { FaPeopleGroup } from "react-icons/fa6";
 const Info = () => {
   return (
     <div className="flex flex-col gap-[40px]">
-      <div className="max-w-[1400px]  w-full justify-center gap-[120px] flex">
+      <div className="max-w-[1400px]  w-full justify-center gap-[120px] flex  mx-auto">
         <div className=" w-[450px] flex flex-col gap-4">
           <span className="text-purple-900 bg-fuchsia-200 w-[145px] text-center rounded-2xl font-bold">
             ჩვენ შესახებ
@@ -37,7 +37,7 @@ const Info = () => {
         </div>
       </div>
       {/* SECTION 2 */}
-      <div className="max-w-[1400px]  w-full flex justify-center items-center flex-col gap-5">
+      <div className="max-w-[1400px]  w-full flex justify-center items-center flex-col gap-5 mx-auto">
         <h2 className="font-bold text-purple-600 text-3xl">ჩვენი მისია</h2>
         <div className="flex gap-5 ">
           <div className="flex flex-col w-[300px] rounded-2xl   h-[140px] bg-fuchsia-100   hover:-translate-y-2 transition-transform duration-300 ">

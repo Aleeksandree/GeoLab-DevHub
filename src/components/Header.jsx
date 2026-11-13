@@ -10,7 +10,7 @@ const Header = () => {
   const { light, setLight, swichMode } = useContext(ModeContext);
   return (
     <div
-      className={`w-full flex items-center sticky top-0 z-50 gap-[] ${
+      className={`w-full flex items-center sticky top-0 z-50  ${
         light ? "bg-mist-900" : "bg-blue-100 "
       }`}
     >
@@ -21,7 +21,7 @@ const Header = () => {
         </Link>
         <HeaderNav light={light} />
 
-        <div className="flex gap-4">
+        <div className="flex gap-7">
           <Link to={"/register"}>
             <button
               className={`w-[120px] h-[50px] rounded-2xl   font-medium cursor-pointer" ${light ? "text-black" : "text-white"}`}
@@ -38,7 +38,7 @@ const Header = () => {
           </Link>
           <button
             onClick={swichMode}
-            className=" cursor-pointe flex justify-center items-center "
+            className={` cursor-pointe flex justify-center items-center  ${light ? "text-white" : "text-black"} `}
           >
             {light ? <FaToggleOn size={35} /> : <FaToggleOff size={35} />}
           </button>
