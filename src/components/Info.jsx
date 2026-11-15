@@ -2,6 +2,9 @@ import {
   Calendar,
   Calendar1Icon,
   CalendarDays,
+  ChartNoAxesColumnIncreasing,
+  CodeXml,
+  Flag,
   GraduationCap,
   RocketIcon,
 } from "lucide-react";
@@ -73,11 +76,66 @@ const Info = () => {
 
       {/* SECTION 3 */}
 
-      <div className="w-full max-w-[1440px] bg-purple-100  mx-auto flex  ">
-        <h2 className="font-extrabold text-fuchsia-900 text-[25px]">
+      <div className="w-full max-w-[1440px]  mx-auto flex-col  ">
+        <h2 className="font-bold text-purple-600 text-[25px] flex bg-blue-100 pl-6 pb-2 ">
           განვითარების ისტორია
         </h2>
-        <div>aa</div>
+        <div className="flex gap-1 bg-purple-100 rounded-4xl p-4 justify-between">
+          <div className="flex flex-col items-center text-center gap-1 w-[200px] shrink-0">
+            <div
+              className="bg-fuchsia-200 w-12 h-12 rounded-full flex items-center
+            justify-center"
+            >
+              <Flag size={30} className="text-purple-600" />
+            </div>
+            <span className="bg-fuchsia-200 rounded-full px-4 py-1 font-bold text-purple-900">
+              2015
+            </span>
+            <p className="w-[100px]">GeoLab-ის დაარსება</p>
+          </div>
+          <span className="block flex-1 h-[2px] bg-purple-500 mt-5 -mx-4"></span>
+          <div className="flex flex-col items-center text-center gap-1 w-[200px] shrink-0">
+            <div
+              className="bg-fuchsia-200 w-12 h-12 rounded-full flex items-center
+            justify-center"
+            >
+              <CodeXml size={30} className="text-purple-600" />
+            </div>
+            <span className="bg-fuchsia-200 rounded-full px-4 py-1 font-bold text-purple-900">
+              2020
+            </span>
+            <p className="w-[100px]">ახალი პროგრამები</p>
+          </div>
+          <span className="block flex-1 h-[2px] bg-purple-500 mt-5 -mx-4"></span>
+          <div className="flex flex-col items-center text-center gap-1 w-[200px] shrink-0">
+            <div
+              className="bg-fuchsia-200 w-12 h-12 rounded-full flex items-center
+            justify-center"
+            >
+              <FaPeopleGroup size={30} className="text-purple-600" />
+            </div>
+            <span className="bg-fuchsia-200 rounded-full px-4 py-1 font-bold text-purple-900">
+              2023
+            </span>
+            <p>საზოგადოების გაფართოება</p>
+          </div>
+          <span className="block flex-1 h-[2px] bg-purple-500 mt-5 -mx-4"></span>
+          <div className="flex flex-col items-center text-center gap-1 w-[200px] shrink-0">
+            <div
+              className="bg-fuchsia-200 w-12 h-12 rounded-full flex items-center
+            justify-center"
+            >
+              <ChartNoAxesColumnIncreasing
+                size={30}
+                className="text-purple-600"
+              />
+            </div>
+            <span className="bg-fuchsia-200 rounded-full px-4 py-1 font-bold text-purple-900">
+              დღეს
+            </span>
+            <p>10+ წელი, მეტი შესაძლებლობები და კურსები</p>
+          </div>
+        </div>
       </div>
     </div>
   );

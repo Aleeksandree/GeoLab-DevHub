@@ -46,7 +46,7 @@ const Footer = () => {
               src={GeoLab}
               alt="Logo-icon"
             />
-            <h2 className="font-bold text-fuchsia-300 text-2xl">GeoLab</h2>
+            <h2 className="font-bold text-purple-600 text-2xl">GeoLab</h2>
           </div>
           <span
             className={` font-bold  ${light ? "text-white" : "text-black "} font-semibold  text-center flex flex-col gap-1`}

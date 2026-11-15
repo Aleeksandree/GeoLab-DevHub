@@ -49,7 +49,7 @@ const Home = () => {
         </div>
       </div>
       <div className="flex flex-col gap-[50px]">
-        <div className="max-w-[1440px] flex flex-col items-center justify-center  ">
+        <div className="max-w-[1440px] flex flex-col items-center justify-center mx-auto ">
           <h2 className="bg-purple-300 w-[230px] text-center rounded-2xl font-bold text-purple-800 p-1 mb-2">
             ჩვენი მიმართულებები
           </h2>
