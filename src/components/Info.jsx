@@ -9,6 +9,7 @@ import {
   RocketIcon,
 } from "lucide-react";
 import itcourse from "../assets/itcourse.png";
+import webDesigne from "../assets/webDesigne.png";
 import { FaPeopleGroup } from "react-icons/fa6";
 const Info = () => {
   return (
@@ -134,6 +135,41 @@ const Info = () => {
               დღეს
             </span>
             <p>10+ წელი, მეტი შესაძლებლობები და კურსები</p>
+          </div>
+        </div>
+      </div>
+
+      {/* SECTION 4 */}
+
+      <div className="flex justify-center items-center max-w-[1440px] mx-auto gap-6  ">
+        <div>
+          <h2 className="font-bold text-purple-600 text-[25px] flex ">
+            ჩვენი საქმიანობა
+          </h2>
+          <img
+            className="w-[200px] rounded-4xl"
+            src={webDesigne}
+            alt="webDesigne"
+          />
+        </div>
+        <div className="flex flex-col gap-4">
+          <p className="max-w-[450px]">
+            ჩვენ ვქმნით შესაძლებლობებს ახალგაზრდებისთვის, რომლებსაც აინტერესებთ
+            განათლება, პრაქტიკული პროექტები და ტექნოლოგიური საზოგადოება.
+          </p>
+          <div className="flex flex-row gap-4 ">
+            <span className="bg-fuchsia-100 rounded-full w-[150px] flex items-center justify-center gap-2 py-2">
+              <GraduationCap className="text-purple-600" size={40} />
+              კურსები
+            </span>
+            <span className="bg-orange-100 rounded-full w-[150px] flex items-center justify-center gap-2 py-2">
+              <CodeXml size={30} className="text-purple-600" />
+              პროექტები
+            </span>
+            <span className="bg-green-100 rounded-full w-[150px] flex items-center justify-center gap-2 py-2">
+              <FaPeopleGroup size={30} className="text-green-500" />
+              ივენთები
+            </span>
           </div>
         </div>
       </div>
