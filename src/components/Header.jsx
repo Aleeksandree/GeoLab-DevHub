@@ -8,6 +8,7 @@ import { ModeContext } from "../Context/Context";
 
 const Header = () => {
   const { light, setLight, swichMode } = useContext(ModeContext);
+  const { isLoggedIn, setIsLoggedIn } = useContext(ModeContext);
   return (
     <div
       className={`w-full flex items-center sticky top-0 z-50  ${
@@ -30,7 +31,7 @@ const Header = () => {
                 to="/register"
                 className={`w-[130px] h-[50px] rounded-2xl flex items-center justify-center font-medium ${
                   light ? "bg-white text-black" : "bg-black text-white"
-                }`}
+                }    `}
               >
                 რეგისტრაცია
               </Link>

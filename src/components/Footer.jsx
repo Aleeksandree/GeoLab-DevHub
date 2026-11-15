@@ -89,7 +89,10 @@ const Footer = () => {
                   key={eachInfo.id}
                 >
                   <div className="flex items-center gap-3" key={eachInfo.id}>
-                    <Icon size={20} className=" text-black shrink-0 w-5" />
+                    <Icon
+                      size={20}
+                      className={`${light ? "text-white" : "text-black "}`}
+                    />
                     <h2
                       className={` font-bold ${light ? "text-white" : "text-black "}`}
                     >

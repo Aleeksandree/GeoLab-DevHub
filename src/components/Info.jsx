@@ -11,6 +11,8 @@ import {
 import itcourse from "../assets/itcourse.png";
 import webDesigne from "../assets/webDesigne.png";
 import { FaPeopleGroup } from "react-icons/fa6";
+import watch from "../assets/watch.png";
+import { Link } from "react-router-dom";
 const Info = () => {
   return (
     <div className="flex flex-col gap-[40px] mt-[75px]">
@@ -81,7 +83,7 @@ const Info = () => {
         <h2 className="font-bold text-purple-600 text-[25px] flex bg-blue-100 pl-6 pb-2 ">
           განვითარების ისტორია
         </h2>
-        <div className="flex gap-1 bg-purple-100 rounded-4xl p-4 justify-between">
+        <div className="flex gap-1 bg-purple-300/40 rounded-4xl p-4 justify-between">
           <div className="flex flex-col items-center text-center gap-1 w-[200px] shrink-0">
             <div
               className="bg-fuchsia-200 w-12 h-12 rounded-full flex items-center
@@ -89,12 +91,12 @@ const Info = () => {
             >
               <Flag size={30} className="text-purple-600" />
             </div>
-            <span className="bg-fuchsia-200 rounded-full px-4 py-1 font-bold text-purple-900">
+            <span className="bg-fuchsia-200 rounded-full px-4 py-1 font-bold text-purple-900 relative">
               2015
             </span>
-            <p className="w-[100px]">GeoLab-ის დაარსება</p>
+            <p className="w-[100px] font-bold">GeoLab-ის დაარსება</p>
           </div>
-          <span className="block flex-1 h-[2px] bg-purple-500 mt-5 -mx-4"></span>
+          <span className="block flex-1 h-[2px] bg-purple-500 mt-5 -mx-4 justc"></span>
           <div className="flex flex-col items-center text-center gap-1 w-[200px] shrink-0">
             <div
               className="bg-fuchsia-200 w-12 h-12 rounded-full flex items-center
@@ -105,7 +107,7 @@ const Info = () => {
             <span className="bg-fuchsia-200 rounded-full px-4 py-1 font-bold text-purple-900">
               2020
             </span>
-            <p className="w-[100px]">ახალი პროგრამები</p>
+            <p className="w-[100px] font-bold">ახალი პროგრამები</p>
           </div>
           <span className="block flex-1 h-[2px] bg-purple-500 mt-5 -mx-4"></span>
           <div className="flex flex-col items-center text-center gap-1 w-[200px] shrink-0">
@@ -118,7 +120,7 @@ const Info = () => {
             <span className="bg-fuchsia-200 rounded-full px-4 py-1 font-bold text-purple-900">
               2023
             </span>
-            <p>საზოგადოების გაფართოება</p>
+            <p className="font-bold">საზოგადოების გაფართოება</p>
           </div>
           <span className="block flex-1 h-[2px] bg-purple-500 mt-5 -mx-4"></span>
           <div className="flex flex-col items-center text-center gap-1 w-[200px] shrink-0">
@@ -134,16 +136,18 @@ const Info = () => {
             <span className="bg-fuchsia-200 rounded-full px-4 py-1 font-bold text-purple-900">
               დღეს
             </span>
-            <p>10+ წელი, მეტი შესაძლებლობები და კურსები</p>
+            <p className="font-bold">
+              10+ წელი, მეტი შესაძლებლობები და კურსები
+            </p>
           </div>
         </div>
       </div>
 
       {/* SECTION 4 */}
 
-      <div className="flex justify-center items-center max-w-[1440px] mx-auto gap-6  ">
+      <div className="flex justify-center items-center  w-[940px] h-[400px]  mx-auto gap-6 bg-purple-300/40 rounded-2xl   ">
         <div>
-          <h2 className="font-bold text-purple-600 text-[25px] flex ">
+          <h2 className="font-bold text-purple-600 text-[25px] flex pb-2   ">
             ჩვენი საქმიანობა
           </h2>
           <img
@@ -153,24 +157,77 @@ const Info = () => {
           />
         </div>
         <div className="flex flex-col gap-4">
-          <p className="max-w-[450px]">
+          <p className="max-w-[450px] font-bold">
             ჩვენ ვქმნით შესაძლებლობებს ახალგაზრდებისთვის, რომლებსაც აინტერესებთ
             განათლება, პრაქტიკული პროექტები და ტექნოლოგიური საზოგადოება.
           </p>
           <div className="flex flex-row gap-4 ">
-            <span className="bg-fuchsia-100 rounded-full w-[150px] flex items-center justify-center gap-2 py-2">
+            <span className="bg-fuchsia-100 rounded-full w-[160px] flex items-center justify-center gap-2 py-2 font-bold">
               <GraduationCap className="text-purple-600" size={40} />
               კურსები
             </span>
-            <span className="bg-orange-100 rounded-full w-[150px] flex items-center justify-center gap-2 py-2">
+            <span className="bg-orange-100 rounded-full w-[160px] flex items-center justify-center gap-2 py-2 font-bold">
               <CodeXml size={30} className="text-purple-600" />
               პროექტები
             </span>
-            <span className="bg-green-100 rounded-full w-[150px] flex items-center justify-center gap-2 py-2">
+            <span className="bg-green-100 rounded-full w-[160px] flex items-center justify-center gap-2 py-2 font-bold">
               <FaPeopleGroup size={30} className="text-green-500" />
               ივენთები
             </span>
           </div>
+        </div>
+      </div>
+      {/* SECTION 5 */}
+      <div className="w-[1440px]  bg-purple-300/40 mx-auto h-[150px] flex items-center rounded-4xl  justify-center gap-[50px]">
+        <div className="flex   flex-col">
+          <div className="flex justify-center items-center">
+            <FaPeopleGroup size={45} className="text-purple-700 " />
+          </div>
+          <div className="flex items-center  justify-center items-center gap-2">
+            <span className="font-bold text-black  text-[20px]"> 10+ წელი</span>
+          </div>
+          <span className="flex items-center justify-center font-bold">
+            გამოცდილება
+          </span>
+        </div>
+        <span className="border text-gray-500/40 h-[120px]  mt-4 "></span>
+        <div>
+          <div className="flex justify-center items-center">
+            <GraduationCap className="text-purple-700" size={45} />
+          </div>
+          <div className="flex items-center  justify-center items-center gap-2">
+            <span className="font-bold text-black text-[20px]">1000+</span>
+          </div>
+          <span className="flex items-center justify-center font-bold">
+            სტუდენტი
+          </span>
+        </div>
+        <span className="border text-gray-500/40 h-[120px]  mt-4 "></span>
+        <div>
+          <div className="flex justify-center items-center">
+            <RocketIcon className="text-purple-700" size={40} />
+          </div>
+          <div className="flex items-center  justify-center items-center gap-2">
+            <span className="font-bold text-blac text-[20px]"> 50+ </span>
+          </div>
+          <span className=" font-bold">პროექტი</span>
+        </div>
+      </div>
+      {/* SECTION 6 */}
+      <div className="w-[1440px]  mx-auto bg-purple-300/40 rounded-4xl px-4 py-3.5">
+        <div className="flex items-center justify-between">
+          <img src={watch} className="w-[90px]" alt="icon" />
+          <div className="flex flex-col items-center justify-center  gap-4">
+            <h2 className="font-bold text-[30px] text-purple-700">
+              აღმოაჩინე ჩვენი კურსები
+            </h2>
+            <p className="font-bold">
+              ისწავლე, პრაქტიკაში იმუშავე და შექმენი შენი პროექტი!
+            </p>
+          </div>
+          <Link className="bg-purple-700 w-[150px] h-[45px]  flex items-center justify-center rounded-2xl text-white font-bold">
+            კურსების ნახვა
+          </Link>
         </div>
       </div>
     </div>

@@ -1,9 +1,26 @@
 import { useContext } from "react";
 import { ModeContext } from "../Context/Context";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
-  const { username, setUsername, setPassword, password, email, setEmail } =
-    useContext(ModeContext);
+  const navigate = useNavigate();
+  function isRegister() {
+    if (username.trim() && password.trim() && email.trim()) {
+      setIsLoggedIn(true);
+      navigate("/");
+    }
+  }
+
+  const {
+    username,
+    setUsername,
+    setPassword,
+    password,
+    email,
+    setEmail,
+    isLoggedIn,
+    setIsLoggedIn,
+  } = useContext(ModeContext);
   console.log(username);
   console.log(password);
   console.log(email);
@@ -40,7 +57,10 @@ const Register = () => {
           შემოუერთდი GeoLab DevHub-ს და დაიწყე შენი განვითარება!
         </p>
 
-        <button className="w-[145px] h-[45px] bg-gray-600 rounded-2xl text-white font-bold">
+        <button
+          onClick={isRegister}
+          className="w-[145px] h-[45px] bg-gray-600 rounded-2xl text-white font-bold"
+        >
           რეგისტრაცია
         </button>
       </div>
