@@ -10,7 +10,7 @@ import { useState } from "react";
 
 const App = () => {
   return (
-    <div className=" bg-blue-100 ">
+    <div className=" bg-blue-100  min-h-screen flex flex-col">
       <Header />
 
       <Routes>

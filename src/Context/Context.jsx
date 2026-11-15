@@ -7,9 +7,24 @@ export function ModeProvider({ children }) {
   function swichMode() {
     setLight((prev) => !prev);
   }
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
 
   return (
-    <ModeContext.Provider value={{ light, setLight, swichMode }}>
+    <ModeContext.Provider
+      value={{
+        light,
+        setLight,
+        swichMode,
+        username,
+        setUsername,
+        email,
+        setEmail,
+        password,
+        setPassword,
+      }}
+    >
       {children}
     </ModeContext.Provider>
   );

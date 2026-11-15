@@ -48,7 +48,9 @@ const Footer = () => {
             />
             <h2 className="font-bold text-fuchsia-300 text-2xl">GeoLab</h2>
           </div>
-          <span className="text-white font-semibold  text-center flex flex-col gap-1 ">
+          <span
+            className={` font-bold  ${light ? "text-white" : "text-black "} font-semibold  text-center flex flex-col gap-1`}
+          >
             ისწავლე, შექმენი და განვითარდი
             <span>შენი იდეები იწყება აქ!</span>
           </span>
@@ -63,7 +65,7 @@ const Footer = () => {
           {navBar.map((eachElement) => (
             <div className="mt-[2px]" key={eachElement.id}>
               <Link
-                className="text-white font-extrabold  "
+                className={` font-bold ${light ? "text-white" : "text-black "}`}
                 to={eachElement.path}
               >
                 {eachElement.name}
@@ -88,7 +90,11 @@ const Footer = () => {
                 >
                   <div className="flex items-center gap-3" key={eachInfo.id}>
                     <Icon size={20} className=" text-black shrink-0 w-5" />
-                    <h2 className="text-white ">{eachInfo.text}</h2>
+                    <h2
+                      className={` font-bold ${light ? "text-white" : "text-black "}`}
+                    >
+                      {eachInfo.text}
+                    </h2>
                   </div>
                 </div>
               );
@@ -98,7 +104,9 @@ const Footer = () => {
         <span className="border border-gray-400"></span>
         <div className=" flex-1  ">
           <div className="flex  justify-center pt-2.5 flex-col items-center ">
-            <h2 className="text-black font-bold text-[18px] mt-1">
+            <h2
+              className={`"text-black font-bold text-[18px] mt-1" ${light ? "text-white" : "text-black"} `}
+            >
               გამოგვყევი
             </h2>
             <div className="flex gap-4 mt-4 text-purple-300">

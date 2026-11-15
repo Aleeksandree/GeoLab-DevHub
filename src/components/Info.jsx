@@ -9,7 +9,7 @@ import itcourse from "../assets/itcourse.png";
 import { FaPeopleGroup } from "react-icons/fa6";
 const Info = () => {
   return (
-    <div className="flex flex-col gap-[40px]">
+    <div className="flex flex-col gap-[40px] mt-[75px]">
       <div className="max-w-[1400px]  w-full justify-center gap-[120px] flex  mx-auto">
         <div className=" w-[450px] flex flex-col gap-4">
           <span className="text-purple-900 bg-fuchsia-200 w-[145px] text-center rounded-2xl font-bold">
@@ -40,8 +40,8 @@ const Info = () => {
       <div className="max-w-[1400px]  w-full flex justify-center items-center flex-col gap-5 mx-auto">
         <h2 className="font-bold text-purple-600 text-3xl">ჩვენი მისია</h2>
         <div className="flex gap-5 ">
-          <div className="flex flex-col w-[300px] rounded-2xl   h-[140px] bg-fuchsia-100   hover:-translate-y-2 transition-transform duration-300 ">
-            <div className="flex items-center  gap-1.5 ml-4 mt-4 ">
+          <div className="flex flex-col w-[300px] rounded-2xl   h-[120px] bg-fuchsia-100   hover:-translate-y-2 transition-transform duration-300 items-center justify-center ">
+            <div className="flex items-center  gap-1.5 justify-center ">
               <GraduationCap className="text-purple-600" size={40} />
               <h4 className="font-bold  text-[20px]">განათლება</h4>
             </div>
@@ -50,8 +50,8 @@ const Info = () => {
             </span>
           </div>
 
-          <div className="flex flex-col w-[300px] rounded-2xl   h-[140px] bg-orange-100  hover:-translate-y-2 transition-transform duration-300 ">
-            <div className="flex items-center  gap-1.5 ml-4 mt-4 ">
+          <div className="flex flex-col w-[300px] rounded-2xl   h-[120px] bg-orange-100  hover:-translate-y-2 transition-transform duration-300 justify-center items-center ">
+            <div className="flex items-center  gap-1.5  ">
               <RocketIcon className="text-orange-500" size={30} />
               <h4 className="font-bold  text-[20px]">პრაქტიკა</h4>
             </div>
@@ -59,8 +59,8 @@ const Info = () => {
               რეალური პროექტები და გამოცდილება
             </span>
           </div>
-          <div className="flex flex-col w-[300px] rounded-2xl   h-[140px] bg-green-100  hover:-translate-y-2 transition-transform duration-300 ">
-            <div className="flex items-center  gap-1.5 ml-4 mt-4 ">
+          <div className="flex flex-col w-[300px] rounded-2xl  justify-center items-center  h-[120px] bg-green-100  hover:-translate-y-2 transition-transform duration-300 ">
+            <div className="flex items-center  gap-1.5  ">
               <FaPeopleGroup className="text-green-500" size={40} />
               <h4 className="font-bold  text-[20px]">საზოგადოება</h4>
             </div>
@@ -69,6 +69,15 @@ const Info = () => {
             </span>
           </div>
         </div>
+      </div>
+
+      {/* SECTION 3 */}
+
+      <div className="w-full max-w-[1440px] bg-purple-100  mx-auto flex  ">
+        <h2 className="font-extrabold text-fuchsia-900 text-[25px]">
+          განვითარების ისტორია
+        </h2>
+        <div>aa</div>
       </div>
     </div>
   );
