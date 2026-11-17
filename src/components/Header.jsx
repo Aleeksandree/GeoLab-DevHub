@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Home from "./Home";
+
 import HeaderNav from "./HeaderNav";
 import GeoLab from "../assets/GeoLab.png";
 import { useContext, useState } from "react";
@@ -7,8 +7,8 @@ import { FaToggleOff, FaToggleOn } from "react-icons/fa";
 import { ModeContext } from "../Context/Context";
 
 const Header = () => {
-  const { light, setLight, swichMode } = useContext(ModeContext);
-  const { isLoggedIn, setIsLoggedIn } = useContext(ModeContext);
+  const { light, swichMode } = useContext(ModeContext);
+
   return (
     <div
       className={`w-full flex items-center sticky top-0 z-50  ${

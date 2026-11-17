@@ -1,6 +1,4 @@
 import {
-  Calendar,
-  Calendar1Icon,
   CalendarDays,
   ChartNoAxesColumnIncreasing,
   CodeXml,

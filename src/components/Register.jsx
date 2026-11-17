@@ -18,7 +18,6 @@ const Register = () => {
     password,
     email,
     setEmail,
-    isLoggedIn,
     setIsLoggedIn,
   } = useContext(ModeContext);
   console.log(username);

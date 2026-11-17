@@ -1,40 +1,14 @@
 import { Link } from "react-router-dom";
 import GeoLab from "../assets/geolab.png";
-import { Mail, MapPin, Phone } from "lucide-react";
-import { FaFacebook, FaFacebookF } from "react-icons/fa";
+
+import { FaFacebookF } from "react-icons/fa";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
 import { useContext } from "react";
 import { ModeContext } from "../Context/Context";
+import { contacts, navBar } from "./object-footer/footerNav";
 
 const Footer = () => {
-  const { light, setLight, swichMode } = useContext(ModeContext);
-  const navBar = [
-    {
-      name: "მთავარი",
-      path: "/",
-      id: 1,
-    },
-    {
-      name: "კურსები",
-      path: "/cours",
-      id: 2,
-    },
-    {
-      name: "პროექტები",
-      path: "/projects",
-      id: 3,
-    },
-    {
-      name: "ინფორმაცია",
-      path: "/infos",
-      id: 4,
-    },
-  ];
-  const contacts = [
-    { id: 1, text: "info@geolab.ge", icon: Mail },
-    { id: 2, text: "+995 555 12 34 56", icon: Phone },
-    { id: 3, text: "თბილისი, საქართველო", icon: MapPin },
-  ];
+  const { light } = useContext(ModeContext);
 
   return (
     <div className={`w-full mt-17 ${light ? "bg-mist-900" : "bg-blue-100 "}`}>
