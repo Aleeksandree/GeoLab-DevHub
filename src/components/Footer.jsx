@@ -5,7 +5,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
 import { useContext } from "react";
 import { ModeContext } from "../Context/Context";
-import { contacts, navBar } from "./object-footer/footerNav";
+import { contacts, navBar } from "./object/footerNav";
 
 const Footer = () => {
   const { light } = useContext(ModeContext);
@@ -39,7 +39,7 @@ const Footer = () => {
           {navBar.map((eachElement) => (
             <div className="mt-[2px]" key={eachElement.id}>
               <Link
-                className={` font-bold ${light ? "text-white" : "text-black "}`}
+                className={` font-medium ${light ? "text-white" : "text-black "}`}
                 to={eachElement.path}
               >
                 {eachElement.name}
@@ -68,7 +68,7 @@ const Footer = () => {
                       className={`${light ? "text-white" : "text-black "}`}
                     />
                     <h2
-                      className={` font-bold ${light ? "text-white" : "text-black "}`}
+                      className={` font-medium ${light ? "text-white" : "text-black "}`}
                     >
                       {eachInfo.text}
                     </h2>

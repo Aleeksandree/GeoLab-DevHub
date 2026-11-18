@@ -1,4 +1,6 @@
 import { Headset, Laptop, Palette, Smartphone } from "lucide-react";
+import { useContext } from "react";
+import { ModeContext } from "../Context/Context";
 
 const Services = () => {
   const services = [
@@ -27,6 +29,7 @@ const Services = () => {
       id: 4,
     },
   ];
+  const { changeCount, setCount, count } = useContext(ModeContext);
   return (
     <div>
       <div className="flex gap-5 max-w-[1200px] mx-auto">
@@ -51,6 +54,17 @@ const Services = () => {
                 {eachElement.descr}
               </span>
               <span className="border border-purple-800 w-[150px]  "></span>
+              <div className="flex gap-4">
+                <button
+                  onClick={changeCount}
+                  className="bg-blue-700 w-10 rounded-2xl"
+                >
+                  + {setCount}
+                </button>
+                <button className="bg-blue-700 w-10 rounded-2xl">
+                  {count}
+                </button>
+              </div>
             </div>
           );
         })}

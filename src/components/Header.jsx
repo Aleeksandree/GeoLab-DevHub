@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import HeaderNav from "./HeaderNav";
 import GeoLab from "../assets/GeoLab.png";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { FaToggleOff, FaToggleOn } from "react-icons/fa";
 import { ModeContext } from "../Context/Context";
 
@@ -23,20 +23,19 @@ const Header = () => {
         <HeaderNav light={light} />
 
         <div className="flex gap-7">
-          <Link to={"/register"}>
-            <button
-              className={`w-[120px] h-[50px] rounded-2xl   font-medium cursor-pointer" ${light ? "text-black" : "text-white"}`}
+          <button
+            className={`w-[120px] h-[50px] rounded-2xl   font-medium   transition-colors duration-300 cursor-pointer ${light ? "text-black" : "text-white"}  `}
+          >
+            <Link
+              to="/register"
+              className={`w-[130px] h-[50px] rounded-2xl flex items-center justify-center font-medium  hover:bg-purple-600 transition-colors duration-300 cursor-pointer  ${
+                light ? "bg-white text-black" : "bg-black text-white"
+              }    `}
             >
-              <Link
-                to="/register"
-                className={`w-[130px] h-[50px] rounded-2xl flex items-center justify-center font-medium ${
-                  light ? "bg-white text-black" : "bg-black text-white"
-                }    `}
-              >
-                რეგისტრაცია
-              </Link>
-            </button>
-          </Link>
+              რეგისტრაცია
+            </Link>
+          </button>
+
           <button
             onClick={swichMode}
             className={` cursor-pointe flex justify-center items-center  ${light ? "text-white" : "text-black"} `}

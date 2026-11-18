@@ -23,7 +23,12 @@ export const navBar = [
   },
 ];
 export const contacts = [
-  { id: 1, text: "info@geolab.ge", icon: Mail },
+  {
+    id: 1,
+    text: "info@geolab.ge",
+    icon: Mail,
+    path: "education@geolab.edu.ge",
+  },
   { id: 2, text: "+995 555 12 34 56", icon: Phone },
   { id: 3, text: "თბილისი, საქართველო", icon: MapPin },
 ];
