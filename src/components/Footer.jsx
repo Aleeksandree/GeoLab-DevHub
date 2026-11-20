@@ -11,7 +11,9 @@ const Footer = () => {
   const { light } = useContext(ModeContext);
 
   return (
-    <div className={`w-full mt-17 ${light ? "bg-mist-900" : "bg-blue-100 "}`}>
+    <div
+      className={`w-full mt-17 ${light ? "bg-mist-900" : "bg-blue-100 "} mt-auto`}
+    >
       <div className="max-w-[1440px] mx-auto flex gap-5 px-2 pt-5 ">
         <div className=" flex-1  flex flex-col items-center gap-2.5">
           <div className="flex items-center  gap-2  ">

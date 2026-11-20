@@ -1,35 +1,6 @@
-import { Headset, Laptop, Palette, Smartphone } from "lucide-react";
-import { useContext } from "react";
-import { ModeContext } from "../Context/Context";
+import { services } from "./object/services";
 
 const Services = () => {
-  const services = [
-    {
-      image: Laptop,
-      title: "ვებ განვითარება",
-      descr: "თანამედროვე და სწრაფი ვებ აპლიკაციები",
-      id: 1,
-    },
-    {
-      image: Smartphone,
-      title: "მობილური აპები",
-      descr: "iOS და  Android აპლიკაციების შექმნა",
-      id: 2,
-    },
-    {
-      image: Palette,
-      title: "UX/UI დიზაინი",
-      descr: "გემოვნებაზე მორგებული დიზაინი",
-      id: 3,
-    },
-    {
-      image: Headset,
-      title: "კონსულტაცია",
-      descr: "იდეების განვითარება და ტექნოლოგიური მიმართულების შერჩევა",
-      id: 4,
-    },
-  ];
-  const { changeCount, setCount, count } = useContext(ModeContext);
   return (
     <div>
       <div className="flex gap-5 max-w-[1200px] mx-auto">
@@ -54,17 +25,6 @@ const Services = () => {
                 {eachElement.descr}
               </span>
               <span className="border border-purple-800 w-[150px]  "></span>
-              <div className="flex gap-4">
-                <button
-                  onClick={changeCount}
-                  className="bg-blue-700 w-10 rounded-2xl"
-                >
-                  + {setCount}
-                </button>
-                <button className="bg-blue-700 w-10 rounded-2xl">
-                  {count}
-                </button>
-              </div>
             </div>
           );
         })}

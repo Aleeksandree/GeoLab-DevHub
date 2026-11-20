@@ -223,7 +223,10 @@ const Info = () => {
               ისწავლე, პრაქტიკაში იმუშავე და შექმენი შენი პროექტი!
             </p>
           </div>
-          <Link className="bg-purple-700 w-[150px] h-[45px]  flex items-center justify-center rounded-2xl text-white font-bold">
+          <Link
+            to={"/cours"}
+            className="bg-purple-700 w-[150px] h-[45px]  flex items-center justify-center rounded-2xl text-white font-bold"
+          >
             კურსების ნახვა
           </Link>
         </div>
